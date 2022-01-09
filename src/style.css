@@ -13,7 +13,6 @@
   position: relative;
   top: -8px;
   color: black;
-  cursor: pointer;
 }
 .active:hover {
   font-size: 12px;
@@ -21,10 +20,16 @@
   font-family: "Questrial", sans-serif;
   position: relative;
   top: -8px;
-  cursor: pointer;
   text-decoration: none;
 }
-
+a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bolder;
+  position: relative;
+  top: -8px;
+  font-family: "Questrial", sans-serif;
+}
 .city-name {
   font-size: 20px;
   font-weight: bolder;
@@ -99,7 +104,7 @@ ul {
 }
 .source {
   text-decoration: none;
-  font-family: "Questrial", sans-serif;
+
   text-align: center;
   color: black;
   display: block;
