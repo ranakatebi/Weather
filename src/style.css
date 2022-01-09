@@ -5,6 +5,7 @@
   margin: 0 auto;
 }
 .ccolor {
+  text-decoration: none;
   cursor: pointer;
   font-size: 12px;
   font-weight: bolder;
@@ -15,6 +16,7 @@
 }
 
 .fcolor {
+  text-decoration: none;
   font-size: 12px;
   font-weight: bolder;
   font-family: "Questrial", sans-serif;
