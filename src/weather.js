@@ -63,11 +63,12 @@ function displayWeatherCondition(response) {
   let findf = document.querySelector("#f");
   findf.addEventListener("click", convertToFahrenheit);
 
-  function convertToCelsius() {
+  function convertToCelsius(event) {
+    event.preventDefault();
     let Celsius = document.querySelector("#city-temp");
     Celsius.innerHTML = temperature;
-    document.getElementById("c").style.color = "blue";
-    document.getElementById("f").style.color = "black";
+    c.classList.add("active");
+    f.classList.remove("active");
   }
   let findc = document.querySelector("#c");
   findc.addEventListener("click", convertToCelsius);
