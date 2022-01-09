@@ -69,7 +69,7 @@ function displayWeatherCondition(response) {
     c.classList.add("active");
     f.classList.remove("active");
     let Celsius = document.querySelector("#city-temp");
-    Celsius.innerHTML = math.round(temperature);
+    Celsius.innerHTML = Math.round(temperature);
   }
   let findc = document.querySelector("#c");
   findc.addEventListener("click", convertToCelsius);
