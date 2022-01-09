@@ -46,29 +46,30 @@ formatDate(new Date());
 //////////////////////////////////////////////////////////////////////////////
 
 function displayWeatherCondition(response) {
-  let temperature = Math.round(response.data.main.temp);
+  temperature = response.data.main.temp;
   document.querySelector("#city-name").innerHTML = response.data.name;
-  document.querySelector("#city-temp").innerHTML = temperature;
+  document.querySelector("#city-temp").innerHTML = Math.round(temperature);
+
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 
   function convertToFahrenheit(event) {
     event.preventDefault();
+    c.classList.remove("active");
+    f.classList.add("active");
     let Celsius = document.querySelector("#city-temp");
     let Farenheit = Math.round((temperature * 9) / 5 + 32);
     Celsius.innerHTML = Farenheit;
-    c.classList.remove("active");
-    f.classList.add("active");
   }
   let findf = document.querySelector("#f");
   findf.addEventListener("click", convertToFahrenheit);
 
   function convertToCelsius(event) {
     event.preventDefault();
-    let Celsius = document.querySelector("#city-temp");
-    Celsius.innerHTML = temperature;
     c.classList.add("active");
     f.classList.remove("active");
+    let Celsius = document.querySelector("#city-temp");
+    Celsius.innerHTML = temperature;
   }
   let findc = document.querySelector("#c");
   findc.addEventListener("click", convertToCelsius);
@@ -97,6 +98,8 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
+let temperature = null;
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
