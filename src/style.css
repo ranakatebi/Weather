@@ -30,11 +30,17 @@ a {
   top: -8px;
   font-family: "Questrial", sans-serif;
 }
-.city-name {
+.city-name,
+.pipe {
   font-size: 20px;
   font-weight: bolder;
   font-family: "Questrial", sans-serif;
-  padding: 3px;
+}
+.i {
+  position: relative;
+  left: -20px;
+    top: -20px;
+
 }
 
 .city-temp {
@@ -62,8 +68,11 @@ a {
 .logo-w {
   font-weight: normal;
 }
-.imgg {
-  width: 25%;
+.img {
+  position: relative;
+  top: -25px;
+  left: -22px;
+  width: 30%;
 }
 
 .share {

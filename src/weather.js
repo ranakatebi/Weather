@@ -46,12 +46,18 @@ formatDate(new Date());
 //////////////////////////////////////////////////////////////////////////////
 
 function displayWeatherCondition(response) {
+  let iconElement = document.querySelector("#icon");
   temperature = response.data.main.temp;
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#city-temp").innerHTML = Math.round(temperature);
-
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   function convertToFahrenheit(event) {
     event.preventDefault();
