@@ -38,9 +38,8 @@ a {
 }
 .i {
   position: relative;
-  left: -20px;
-    top: -20px;
-
+  left: -30px;
+  top: -20px;
 }
 
 .city-temp {
@@ -70,9 +69,9 @@ a {
 }
 .img {
   position: relative;
-  top: -25px;
+  top: -20px;
   left: -22px;
-  width: 30%;
+  width: 35%;
 }
 
 .share {
