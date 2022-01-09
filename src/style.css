@@ -1,3 +1,6 @@
+body {
+  font-family: "Questrial", sans-serif;
+}
 .search-input {
   padding-top: 50px;
   width: 50%;
@@ -9,7 +12,6 @@
   text-decoration: none;
   font-size: 12px;
   font-weight: bolder;
-  font-family: "Questrial", sans-serif;
   position: relative;
   top: -8px;
   color: black;
@@ -17,7 +19,6 @@
 .active:hover {
   font-size: 12px;
   font-weight: bolder;
-  font-family: "Questrial", sans-serif;
   position: relative;
   top: -8px;
   text-decoration: none;
@@ -28,13 +29,11 @@ a {
   font-weight: bolder;
   position: relative;
   top: -8px;
-  font-family: "Questrial", sans-serif;
 }
 .city-name,
 .pipe {
   font-size: 20px;
   font-weight: bolder;
-  font-family: "Questrial", sans-serif;
 }
 .i {
   position: relative;
@@ -45,7 +44,6 @@ a {
 .city-temp {
   font-size: 23px;
   font-weight: bolder;
-  font-family: "Questrial", sans-serif;
   padding: 3px;
 }
 .border {
@@ -61,13 +59,12 @@ a {
   font-size: 30px;
   background-color: #2b7cdf80;
   padding: 20px;
-  font-family: "Questrial", sans-serif;
   border: 1px solid white;
 }
 .logo-w {
   font-weight: normal;
 }
-.img {
+.icon {
   position: relative;
   top: -20px;
   left: -22px;
@@ -76,7 +73,7 @@ a {
 
 .share {
   font-size: 25px;
-  font-family: fantasy;
+  font-weight: bold;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
