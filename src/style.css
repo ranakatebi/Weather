@@ -4,18 +4,8 @@
   display: block;
   margin: 0 auto;
 }
-.ccolor {
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: bolder;
-  font-family: "Questrial", sans-serif;
-  position: relative;
-  top: -8px;
-  color: black;
-}
 
-.fcolor {
+.active {
   font-size: 12px;
   font-weight: bolder;
   font-family: "Questrial", sans-serif;
