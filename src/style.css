@@ -17,6 +17,8 @@
 }
 .active:hover {
   text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  font-size: 12px;
 }
 .city-name {
   font-size: 20px;
