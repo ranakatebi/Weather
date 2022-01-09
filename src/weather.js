@@ -52,12 +52,13 @@ function displayWeatherCondition(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 
-  function convertToFahrenheit() {
+  function convertToFahrenheit(event) {
+    event.preventDefault();
     let Celsius = document.querySelector("#city-temp");
     let Farenheit = Math.round((temperature * 9) / 5 + 32);
     Celsius.innerHTML = Farenheit;
-    document.getElementById("f").style.color = "blue";
-    document.getElementById("c").style.color = "black";
+    c.classList.remove("active");
+    f.classList.add("active");
   }
   let findf = document.querySelector("#f");
   findf.addEventListener("click", convertToFahrenheit);
