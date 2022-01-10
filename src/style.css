@@ -37,7 +37,7 @@ a {
 }
 .name-temp {
   position: relative;
-  left: -30px;
+  left: -20px;
   top: -20px;
 }
 
@@ -64,9 +64,10 @@ a {
 
 .icon {
   position: relative;
-  top: -20px;
-  left: -22px;
-  width: 35%;
+  top: -25px;
+  left: -17px;
+  height: 64px;
+  width: 64px;
 }
 
 .share {
@@ -83,7 +84,6 @@ a {
   box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
   cursor: pointer;
   border-radius: 20px;
-  margin-left: 45%;
 }
 .share:hover {
   transition: opacity 300ms ease-in-out;
@@ -117,4 +117,7 @@ ul {
 }
 .source:hover {
   color: #fcd92c;
+}
+.row {
+  --bs-gutter-x: 0px;
 }
