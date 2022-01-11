@@ -10,14 +10,14 @@ body {
 
 .active {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bolder;
   position: relative;
   top: -8px;
   color: black;
 }
 .active:hover {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bolder;
   position: relative;
   top: -8px;
@@ -25,10 +25,13 @@ body {
 }
 a {
   text-decoration: none;
-  font-size: 12px;
-  font-weight: bolder;
+  font-size: 14px;
   position: relative;
   top: -8px;
+  color: rgb(255, 255, 255, 50%);
+}
+a:hover {
+  color: rgb(255, 255, 255);
 }
 .city-name,
 .pipe {
