@@ -48,7 +48,7 @@ a {
 }
 .border {
   background-color: #bd414b80;
-  padding: 15px;
+  padding: 5px 20px 5px 20px;
   border-radius: 10px;
   margin-top: 20px;
 }
@@ -69,7 +69,11 @@ a {
   height: 64px;
   width: 64px;
 }
-
+.col-6 {
+  position: relative;
+  position: relative;
+  top: 22px;
+}
 .share {
   font-size: 25px;
   font-weight: bold;
