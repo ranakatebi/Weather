@@ -52,6 +52,17 @@ function displayWeatherCondition(response) {
   document.querySelector("#city-temp").innerHTML = Math.round(temperature);
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  console.log(response);
+  temperature = response.data.main.temp;
+  document.querySelector("#temp_max").innerHTML = Math.round(
+    response.data.main.temp_max
+  );
+  document.querySelector("#temp_min").innerHTML = Math.round(
+    response.data.main.temp_min
+  );
+  document.querySelector("#feels_like").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
 
   iconElement.setAttribute(
     "src",
