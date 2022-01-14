@@ -63,10 +63,7 @@ function displayWeatherCondition(response) {
     response.data.main.feels_like
   );
 
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
+  iconElement.setAttribute("src", `image/${response.data.weather[0].icon}.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   function convertToFahrenheit(event) {

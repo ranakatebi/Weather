@@ -17,6 +17,8 @@ body {
   font-weight: bolder;
   position: relative;
   top: -8px;
+  left: 2px;
+
   color: black;
 }
 .active:hover {
@@ -36,25 +38,30 @@ a {
 a:hover {
   color: rgb(255, 255, 255);
 }
-.city-name,
-.pipe {
+.city-name {
   font-size: 20px;
   font-weight: bolder;
 }
+.left {
+  position: relative;
+  left: 5px;
+}
 .name-temp {
   position: relative;
-  left: -20px;
-  top: -20px;
+  left: 5px;
+}
+
+.pipe {
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .city-temp {
   font-size: 23px;
   font-weight: bolder;
-  padding: 3px;
 }
 .border {
-  /* background-color: #bd414b80; */
-  padding: 5px 20px 5px 20px;
+  padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
 }
@@ -63,22 +70,16 @@ a:hover {
   margin-top: 30px;
   color: white;
   font-size: 30px;
-  /* background-color: #2b7cdf80; */
   padding: 20px;
   border: 1px solid white;
 }
 
 .icon {
+  width: 40px;
   position: relative;
-  top: -25px;
-  left: -17px;
-  height: 64px;
-  width: 64px;
+  top: -5px;
 }
-.col-6 {
-  position: relative;
-  top: 22px;
-}
+
 .share {
   font-size: 25px;
   font-weight: bold;
@@ -108,7 +109,7 @@ a:hover {
   background-color: #4d71b0;
   border-radius: 50%;
   position: relative;
-  top: -1px;
+  top: -2px;
 }
 
 ul {
