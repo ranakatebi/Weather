@@ -72,17 +72,17 @@ function displayForecast(response) {
      
                 <div class="row align-items-start">
                   <div class="col">${formatDay(forecastDay.dt)}</div>
-                  <div class="col">
+                  <div class="col-2">
                     <img
                        src="image/${forecastDay.weather[0].icon}.png"
               alt=""
               width="42"
                     />
                   </div>
-                  <div class="col"> <span class="weather-forecast-temperature-max"> ${Math.round(
+                  <div class="col forcast"> <span class="forecast-temperature-max"> ${Math.round(
                     forecastDay.temp.max
                   )}°C / </span>
-              <span class="weather-forecast-temperature-min"> ${Math.round(
+              <span class="forecast-temperature-min"> ${Math.round(
                 forecastDay.temp.min
               )}°C </span></div>
                 </div>

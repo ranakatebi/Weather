@@ -140,3 +140,7 @@ ul {
 .row {
   --bs-gutter-x: 0px;
 }
+.forcast {
+  position: relative;
+  left: 80px;
+}
