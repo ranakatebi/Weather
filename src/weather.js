@@ -48,6 +48,7 @@ formatDate(new Date());
 function displayWeatherCondition(response) {
   let iconElement = document.querySelector("#icon");
   temperature = response.data.main.temp;
+
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#city-temp").innerHTML = Math.round(temperature);
   document.querySelector("#description").innerHTML =
@@ -62,6 +63,9 @@ function displayWeatherCondition(response) {
   document.querySelector("#feels_like").innerHTML = Math.round(
     response.data.main.feels_like
   );
+  document.querySelector(
+    "#humidity"
+  ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
 
   iconElement.setAttribute("src", `image/${response.data.weather[0].icon}.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
