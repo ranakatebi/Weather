@@ -45,6 +45,62 @@ function formatDate(now) {
 formatDate(new Date());
 //////////////////////////////////////////////////////////////////////////////
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return days[day];
+}
+
+function displayForecast(response) {
+  let forecast = response.data.daily;
+
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="container week">`;
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML += `
+     
+                <div class="row align-items-start">
+                  <div class="col">${formatDay(forecastDay.dt)}</div>
+                  <div class="col">
+                    <img
+                       src="image/${forecastDay.weather[0].icon}.png"
+              alt=""
+              width="42"
+                    />
+                  </div>
+                  <div class="col"> <span class="weather-forecast-temperature-max"> ${Math.round(
+                    forecastDay.temp.max
+                  )}°C / </span>
+              <span class="weather-forecast-temperature-min"> ${Math.round(
+                forecastDay.temp.min
+              )}°C </span></div>
+                </div>
+     `;
+    }
+  });
+
+  forecastHTML += `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = "89df1cb5a298dd0aab1a82b6c4062896";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+//////////////////////////////////////////////////////////////////////////////
 function displayWeatherCondition(response) {
   let iconElement = document.querySelector("#icon");
   temperature = response.data.main.temp;
@@ -69,6 +125,7 @@ function displayWeatherCondition(response) {
 
   iconElement.setAttribute("src", `image/${response.data.weather[0].icon}.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  getForecast(response.data.coord);
 
   function convertToFahrenheit(event) {
     event.preventDefault();

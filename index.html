@@ -47,111 +47,45 @@
                 id="submit-button"
               />
             </div>
-            <div class="col-1">           
-            <button class="btn btn-primary btn-circle loc" id="loc"><i class="fas fa-map-marker-alt"></i></button>
-          </div>
+            <div class="col-1">
+              <button class="btn btn-primary btn-circle loc" id="loc">
+                <i class="fas fa-map-marker-alt"></i>
+              </button>
+            </div>
 
-          <div class="row border">
-            <div class="col-6">
-              <div class="row " id="time">Monday 27 December 1:09</div>
-              <div class="row"><br /></div>
-              <div class="row">
-                <span 
-                  ><img
-                    id ="icon"
-                    src=""
-                    alt=""
-                    class="icon"
-                  />
-                  <i class="name-temp">
-                    <span class="city-name" id="city-name">  </span>
-                    <span class="left">
-                    <span class="city-temp" id="city-temp">  </span>
-                    <a  href="#" id="c" class="active"> °C </a>
-                    <span class="pipe">|</span>
-                    <a href="#"  id="f"> °F</a>
-                    </span>
-                    </i
-                  ></span>
+            <div class="row border">
+              <div class="col-6">
+                <div class="row" id="time">Monday 27 December 1:09</div>
+                <div class="row"><br /></div>
+                <div class="row">
+                  <span
+                    ><img id="icon" src="" alt="" class="icon" />
+                    <i class="name-temp">
+                      <span class="city-name" id="city-name"> </span>
+                      <span class="left">
+                        <span class="city-temp" id="city-temp"> </span>
+                        <a href="#" id="c" class="active"> °C </a>
+                        <span class="pipe">|</span>
+                        <a href="#" id="f"> °F</a>
+                      </span>
+                    </i></span
+                  >
+                </div>
+              </div>
+              <div class="col-6 d-flex flex-row-reverse">
+                <ul>
+                  <li id="description">Partly Cloudy</li>
+                  <li>
+                    <span id="temp_max"></span><span>°C / </span
+                    ><span id="temp_min"></span> °C
+                  </li>
+                  <li>Feels like <span id="feels_like"></span> °C</li>
+                  <li id="humidity">Humidity</li>
+                </ul>
               </div>
             </div>
-            <div class="col-6 d-flex flex-row-reverse" >
-              <ul>
-                <li id="description">Partly Cloudy</li>
-                <li ><span id="temp_max"></span><span>°C / </span><span id="temp_min"></span> °C</li>
-                <li>Feels like <span id="feels_like"></span> °C</li>
-                 <li id="humidity">Humidity</li>
-              </ul>
-             </div>
-          </div>
 
-          <div class="container week">
-            <div class="row align-items-start">
-              <div class="col">Tuesday</div>
-              <div class="col">
-                <img
-                  src="image\10d.png"
-                  width="40"
-                  alt=""
-                />
-              </div>
-              <div class="col">6°C / 3°C</div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col">Wednesday</div>
-              <div class="col">
-                <img
-                  src="image\11d.png"
-                  width="40"
-                  alt=""
-                />
-              </div>
-              <div class="col">7°C / 5°C</div>
-            </div>
-            <div class="row align-items-end">
-              <div class="col">Thursday</div>
-              <div class="col">
-                <img
-                  src="image\10n.png"
-                  width="40"
-                  alt=""
-                />
-              </div>
-              <div class="col">4°C / 2°C</div>
-            </div>
-            <div class="row align-items-start">
-              <div class="col">Friday</div>
-              <div class="col">
-                <img
-                  src="image\04n.png"
-                  width="40"
-                  alt=""
-                />
-              </div>
-              <div class="col">2°C / -1°C</div>
-            </div>
-            <div class="row align-items-start">
-              <div class="col">Saturday</div>
-              <div class="col">
-                <img
-                  src="image\13d.png"
-                  width="40"
-                  alt=""
-                />
-              </div>
-              <div class="col">4°C / 1°C</div>
-            </div>
-            <div class="row align-items-start">
-              <div class="col">Sunday</div>
-              <div class="col">
-                <img
-                  src="image\02d.png"
-                  width="40"
-                  alt=""
-                />
-              </div>
-              <div class="col">6°C / 2°C</div>
-            </div>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
         </form>
       </div>
@@ -171,8 +105,12 @@
       </svg>
       share
     </button>
-    <a class="source" href="https://github.com/ranakatebi/Weather" target="_blank">
-      Open Source Code By Rana Katebi 
+    <a
+      class="source"
+      href="https://github.com/ranakatebi/Weather"
+      target="_blank"
+    >
+      Open Source Code By Rana Katebi
     </a>
   </body>
   <script src="src/weather.js"></script>
