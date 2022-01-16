@@ -1,6 +1,7 @@
 body {
   font-family: "Questrial", sans-serif;
   background-image: url("../image/sky-cloud.jpg");
+
 }
 
 .search-input {
@@ -127,6 +128,7 @@ ul {
   position: relative;
   left: 60px;
 }
+
 
 .source {
   text-decoration: none;
