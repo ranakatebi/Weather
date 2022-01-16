@@ -124,6 +124,7 @@ function displayWeatherCondition(response) {
 
   iconElement.setAttribute("src", `image/${response.data.weather[0].icon}.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
   getForecast(response.data.coord);
 
   function convertToFahrenheit(event) {
