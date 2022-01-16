@@ -62,9 +62,7 @@ function formatDay(timestamp) {
 
 function displayForecast(response) {
   let forecast = response.data.daily;
-
   let forecastElement = document.querySelector("#forecast");
-
   let forecastHTML = `<div class="container week">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 7) {
@@ -86,6 +84,7 @@ function displayForecast(response) {
                 forecastDay.temp.min
               )}°C </span></div>
                 </div>
+
      `;
     }
   });
