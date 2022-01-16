@@ -26,91 +26,93 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="row justify-content-center search-input">
-        <form class="search-form" id="search-form">
-          <div class="row input-button">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Type a City"
-                class="form-control"
-                id="search"
-                autocomplete="off"
-              />
-            </div>
-            <div class="col-2">
-              <input
-                type="submit"
-                value="Search"
-                class="btn btn-warning"
-                id="submit-button"
-              />
-            </div>
-            <div class="col-1">
-              <button class="btn btn-primary btn-circle loc" id="loc">
-                <i class="fas fa-map-marker-alt"></i>
-              </button>
-            </div>
+    <div class="wrapper">
+      <div class="container m">
+        <div class="row justify-content-center search-input">
+          <form class="search-form" id="search-form">
+            <div class="row input-button">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a City"
+                  class="form-control"
+                  id="search"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-2">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-warning"
+                  id="submit-button"
+                />
+              </div>
+              <div class="col-1">
+                <button class="btn btn-primary btn-circle loc" id="loc">
+                  <i class="fas fa-map-marker-alt"></i>
+                </button>
+              </div>
 
-            <div class="row border">
-              <div class="col-6">
-                <div class="row" id="time">Monday 27 December 1:09</div>
-                <br />
-                <div class="row">
-                  <span
-                    ><img id="icon" src="" alt="" class="icon" />
-                    <i class="name-temp">
-                      <span class="city-name" id="city-name"> </span>
-                      <span class="left">
-                        <span class="city-temp" id="city-temp"> </span>
-                        <a href="#" id="c" class="active"> °C </a>
-                        <span class="pipe">|</span>
-                        <a href="#" id="f"> °F</a>
-                      </span>
-                    </i></span
-                  >
+              <div class="row border">
+                <div class="col-6">
+                  <div class="row" id="time">Monday 27 December 1:09</div>
+                  <br />
+                  <div class="row">
+                    <span
+                      ><img id="icon" src="" alt="" class="icon" />
+                      <i class="name-temp">
+                        <span class="city-name" id="city-name"> </span>
+                        <span class="left">
+                          <span class="city-temp" id="city-temp"> </span>
+                          <a href="#" id="c" class="active"> °C </a>
+                          <span class="pipe">|</span>
+                          <a href="#" id="f"> °F</a>
+                        </span>
+                      </i></span
+                    >
+                  </div>
+                </div>
+                <div class="col-6 d-flex flex-row-reverse">
+                  <ul>
+                    <li id="description">Partly Cloudy</li>
+                    <li>
+                      <span id="temp_max"></span><span>°C / </span
+                      ><span id="temp_min"></span> °C
+                    </li>
+                    <li>Feels like <span id="feels_like"></span> °C</li>
+                    <li id="humidity">Humidity</li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-6 d-flex flex-row-reverse">
-                <ul>
-                  <li id="description">Partly Cloudy</li>
-                  <li>
-                    <span id="temp_max"></span><span>°C / </span
-                    ><span id="temp_min"></span> °C
-                  </li>
-                  <li>Feels like <span id="feels_like"></span> °C</li>
-                  <li id="humidity">Humidity</li>
-                </ul>
-              </div>
-            </div>
 
-            <div class="weather-forecast" id="forecast"></div>
-          </div>
-        </form>
-      </div>
-      <button class="share">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-share"
-          viewBox="0 0 16 16"
+              <div class="weather-forecast" id="forecast"></div>
+            </div>
+          </form>
+        </div>
+        <button class="share">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-share"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+            />
+          </svg>
+          share
+        </button>
+        <a
+          class="source"
+          href="https://github.com/ranakatebi/Weather"
+          target="_blank"
         >
-          <path
-            d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
-          />
-        </svg>
-        share
-      </button>
-      <a
-        class="source"
-        href="https://github.com/ranakatebi/Weather"
-        target="_blank"
-      >
-        Open Source Code By Rana Katebi
-      </a>
+          Open Source Code By Rana Katebi
+        </a>
+      </div>
     </div>
   </body>
   <script src="src/weather.js"></script>

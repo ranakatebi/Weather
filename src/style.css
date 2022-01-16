@@ -65,7 +65,7 @@ a:hover {
   border-radius: 10px;
   margin-top: 20px;
 }
-.week {
+.container .week {
   border-radius: 10px;
   margin-top: 30px;
   color: white;
@@ -143,7 +143,4 @@ ul {
 .forcast {
   position: relative;
   left: 80px;
-}
-.container {
-  width: 100%;
 }
