@@ -191,12 +191,11 @@ ul {
 }
 @media (max-width: 420px) {
   .col.d-flex.justify-content-sm-end {
-    font-size: 9px;
+    font-size: 8px;
   }
   .col.d-flex.justify-content-sm-start {
-    font-size: 9px;
+    font-size: 8px;
   }
-
   .weathericon {
     display: none;
   }
