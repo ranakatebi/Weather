@@ -189,18 +189,7 @@ ul {
     margin: 0 auto;
   }
 }
-@media (max-width: 420px) {
-  .col.d-flex.justify-content-sm-end {
-    font-size: 8px;
-  }
-  .col.d-flex.justify-content-sm-start {
-    font-size: 8px;
-  }
-  .weathericon {
-    display: none;
-  }
-}
-@media (max-width: 350px) {
+@media (max-width: 415px) {
   .container.week {
     display: none;
   }
