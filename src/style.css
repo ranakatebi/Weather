@@ -205,6 +205,5 @@ ul {
 }
 @media (max-width: 350px) {
   .container.week {
-    display: none;
   }
 }
