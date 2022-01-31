@@ -192,8 +192,10 @@ ul {
 @media (max-width: 420px) {
   .col.d-flex.justify-content-sm-end {
     font-size: 8px;
+    text-align: center !important;
   }
   .col.d-flex.justify-content-sm-start {
+    text-align: center !important;
     font-size: 8px;
   }
   .col.d-flex.justify-content-sm-center {
