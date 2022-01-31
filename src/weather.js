@@ -68,16 +68,19 @@ function displayForecast(response) {
     if (index < 7) {
       forecastHTML += `
      
-                <div class="row">
-                  <div class="col">${formatDay(forecastDay.dt)}</div>
-                  <div class="col-2">
+                <div class="row d-flex flex-sm-wrap">
+                  <div class="col d-flex justify-content-sm-start  ">${formatDay(
+                    forecastDay.dt
+                  )}</div>
+                  <div class="col d-flex justify-content-sm-center  ">
                     <img
                        src="image/${forecastDay.weather[0].icon}.png"
               alt=""
+              class="weathericon"
               width="42"
                     />
                   </div>
-                  <div class="col forcast"> <span class="forecast-temperature-max"> ${Math.round(
+                  <div class="col d-flex justify-content-sm-end"> <span class="forecast-temperature-max"> ${Math.round(
                     forecastDay.temp.max
                   )}°C / </span>
               <span class="forecast-temperature-min"> ${Math.round(

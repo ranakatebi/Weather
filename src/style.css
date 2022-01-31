@@ -1,7 +1,6 @@
 body {
   font-family: "Questrial", sans-serif;
   background-image: url("../image/sky-cloud.jpg");
-
 }
 
 .search-input {
@@ -124,11 +123,11 @@ a:hover {
 ul {
   list-style-type: none;
 }
-.forcast {
+/* .forcast {
   position: relative;
   left: 60px;
 }
-
+ */
 
 .source {
   text-decoration: none;
@@ -144,4 +143,68 @@ ul {
 }
 .row {
   --bs-gutter-x: 0px;
+}
+
+@media (max-width: 1200px) {
+  .col.d-flex.justify-content-sm-end {
+    font-size: 16px;
+  }
+  .col.d-flex.justify-content-sm-start {
+    font-size: 16px;
+  }
+  .col.d-flex.justify-content-sm-center {
+    font-size: 16px;
+  }
+  .weathericon {
+    width: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .col.d-flex.justify-content-sm-end {
+    font-size: 11px;
+  }
+  .col.d-flex.justify-content-sm-start {
+    font-size: 11px;
+  }
+  .col.d-flex.justify-content-sm-center {
+    font-size: 11px;
+  }
+  .weathericon {
+    width: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .col.d-flex.justify-content-sm-end {
+    font-size: 10px;
+  }
+  .col.d-flex.justify-content-sm-start {
+    font-size: 10px;
+  }
+  .col.d-flex.justify-content-sm-center {
+    font-size: 10px;
+  }
+  .weathericon {
+    font-size: xx-small;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 420px) {
+  .col.d-flex.justify-content-sm-end {
+    font-size: 8px;
+  }
+  .col.d-flex.justify-content-sm-start {
+    font-size: 8px;
+  }
+  .col.d-flex.justify-content-sm-center {
+    font-size: 8px;
+  }
+  .weathericon {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  .container.week {
+    display: none;
+  }
 }
