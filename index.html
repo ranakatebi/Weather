@@ -28,37 +28,40 @@
   <body>
     <div class="wrapper">
       <div class="container m">
-        <div class="row justify-content-center search-input">
+        <div class="row d-flex search-input">
           <form class="search-form" id="search-form">
             <div class="row input-button">
-              <div class="col-9">
-                <input
-                  type="search"
-                  placeholder="Type a City"
-                  class="form-control"
-                  id="search"
-                  autocomplete="off"
-                />
+              <!-- -->
+              <div class="row">
+                <div class="col-9 d-flex justify-content-between">
+                  <input
+                    type="search"
+                    placeholder="Type a City"
+                    class="form-control"
+                    id="search"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-2 d-flex justify-content-between">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn btn-warning"
+                    id="submit-button"
+                  />
+                </div>
+                <div class="col-1 d-flex justify-content-between">
+                  <button class="btn btn-primary btn-circle loc" id="loc">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </button>
+                </div>
+                <!-- -->
               </div>
-              <div class="col-2">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-warning"
-                  id="submit-button"
-                />
-              </div>
-              <div class="col-1">
-                <button class="btn btn-primary btn-circle loc" id="loc">
-                  <i class="fas fa-map-marker-alt"></i>
-                </button>
-              </div>
-
-              <div class="row border">
-                <div class="col-6">
+              <div class="row d-flex border">
+                <div class="col-6 justify-content-sm-between">
                   <div class="row" id="time">Monday 27 December 1:09</div>
                   <br />
-                  <div class="row">
+                  <div class="row cityforcast">
                     <span
                       ><img id="icon" src="" alt="" class="icon" />
                       <i class="name-temp">
@@ -67,7 +70,7 @@
                           <span class="city-temp" id="city-temp"> </span>
                           <a href="#" id="c" class="active"> °C </a>
                           <span class="pipe">|</span>
-                          <a href="#" id="f"> °F</a>
+                          <a href="#" class="f" id="f"> °F</a>
                         </span>
                       </i></span
                     >

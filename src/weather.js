@@ -68,7 +68,7 @@ function displayForecast(response) {
     if (index < 7) {
       forecastHTML += `
      
-                <div class="row d-flex flex-sm-wrap">
+                <div class="row d-flex ">
                   <div class="col d-flex justify-content-sm-start  ">${formatDay(
                     forecastDay.dt
                   )}</div>
